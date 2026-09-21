@@ -31,6 +31,7 @@ dist-ssr
 .vs/
 *.user
 *.suo
+obj/
 
 # Vite
 node_modules/
