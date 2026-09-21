@@ -1,1 +1,0 @@
-C:\Users\armos\source\repos\MessengerClient\obj\Debug\messengerclient.esproj.CoreCompileInputs.cache
