@@ -1697,6 +1697,7 @@ select {
         color: var(--text-h);
         font-size: var(--text-2xl);
         font-weight: 700;
+        text-align: center;
     }
 
 /* =========================================================
