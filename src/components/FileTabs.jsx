@@ -24,10 +24,22 @@ const getFileTypeValue = (tab) => {
 const FileTabs = ({ chatId }) => {
     const [activeTab, setActiveTab] = useState('media');
     const [attachments, setAttachments] = useState([]);
-    const [loading, setLoading] = useState(false);
     const [hasMore, setHasMore] = useState(true);
     const [skip, setSkip] = useState(0);
     const loaderRef = useRef(null);
+    const [loading, setLoading] = useState(false);
+    const [showLoading, setShowLoading] = useState(false);
+
+    // Управление задержкой показа
+    useEffect(() => {
+        let timer;
+        if (loading) {
+            timer = setTimeout(() => setShowLoading(true), 250);
+        } else {
+            setShowLoading(false);
+        }
+        return () => clearTimeout(timer);
+    }, [loading]);
 
     const loadAttachments = useCallback(async (reset = false) => {
         if (!chatId || loading) return;
@@ -125,7 +137,7 @@ const FileTabs = ({ chatId }) => {
                 ))}
             </div>
             <div className="tabs-content">
-                {loading && attachments.length === 0 && <p>Загрузка...</p>}
+                {showLoading && attachments.length === 0 && <p>Загрузка...</p>}
                 {!loading && attachments.length === 0 && (
                     <p className="empty-state">Нет {activeTab}</p>
                 )}

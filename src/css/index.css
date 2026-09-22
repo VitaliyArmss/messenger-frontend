@@ -2650,7 +2650,7 @@ select {
         }
 
 /* Центрирование блока "Введите запрос для поиска" */
-.search-list > p {
+.search-text {
     text-align: center;
     width: 100%;
     padding: 20px;

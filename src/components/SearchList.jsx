@@ -76,7 +76,7 @@ const SearchList = ({ searchValue, openChat }) => {
     };
 
     if (searchValue.trim() === '') {
-        return (<p>Введите запрос для поиска</p>);
+        return (<p className="search-text">Введите запрос для поиска</p>);
     }
 
     return (
