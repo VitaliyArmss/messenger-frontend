@@ -35,6 +35,22 @@ const Register = () => {
         setConfirmPassword(filteredValue);
     };
 
+    const handleNameChange = (e) => {
+        const value = e.target.value;
+        // Разрешаем только латиницу, цифры и специальные символы для email
+        const filteredValue = value.replace(/[^a-zA-Z0-9@._\-]/g, '');
+        setName(filteredValue);
+    };
+
+    const handleUserNameChange = (e) => {
+        const value = e.target.value;
+        // Только строчная латиница, цифры и подчёркивание
+        const filteredValue = value
+            .toLowerCase()
+            .replace(/[^a-z0-9_]/g, '');
+        setUserName(filteredValue);
+    };
+
     // Переход на второй шаг с проверкой email
     const handleNext = async () => {
         setError('');
@@ -181,7 +197,7 @@ const Register = () => {
                             type="text"
                             placeholder="Отображаемое имя"
                             value={name}
-                            onChange={(e) => setName(e.target.value)}
+                            onChange={handleNameChange}
                             required
                             maxLength={20}
                         />
@@ -189,7 +205,7 @@ const Register = () => {
                             type="text"
                             placeholder="Уникальный никнейм"
                             value={userName}
-                            onChange={(e) => setUserName(e.target.value)}
+                            onChange={handleUserNameChange}
                             required
                             maxLength={15}
                         />

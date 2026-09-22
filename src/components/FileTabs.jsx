@@ -16,8 +16,6 @@ const getFileTypeValue = (tab) => {
             return 2;   // Sound
         case 'files':
             return 0;   // File
-        case 'links':
-            return null; // все файлы (без фильтра)
         default:
             return null;
     }
@@ -108,7 +106,6 @@ const FileTabs = ({ chatId }) => {
     const tabs = [
         { id: 'media', label: 'Media', icon: '🖼️' },
         { id: 'files', label: 'Files', icon: '📄' },
-        { id: 'links', label: 'Links', icon: '🔗' },
         { id: 'music', label: 'Music', icon: '🎵' },
     ];
 

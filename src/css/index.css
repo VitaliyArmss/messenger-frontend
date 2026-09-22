@@ -2648,3 +2648,38 @@ select {
         .message-modal-confirm.danger:hover {
             background: var(--danger-hover);
         }
+
+/* Центрирование блока "Введите запрос для поиска" */
+.search-list > p {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    color: var(--text-muted);
+}
+
+/* Центрирование блока профиля (Имя / Username / Email) */
+.profile-view {
+    text-align: center;
+}
+
+    .profile-view p {
+        text-align: center;
+    }
+
+/* Центрирование блока личного чата (@username / Чат создан) */
+.private-info {
+    text-align: center;
+}
+
+    .private-info p {
+        text-align: center;
+    }
+
+/* Блок группы (Участников / Создан) — тоже по центру, если нужно */
+.group-info {
+    text-align: center;
+}
+
+    .group-info > p {
+        text-align: center;
+    }
