@@ -8,7 +8,7 @@ export const useNotificationSound = () => {
     useEffect(() => {
         if (!isInitialized.current) {
             // Создаём аудио с тихим звуком (можно заменить на свой)
-            audioRef.current = new Audio('/notification-sound.mp3');
+            audioRef.current = new Audio(`${import.meta.env.BASE_URL}notification-sound.mp3`)
             audioRef.current.volume = 0.2;
             // Предзагрузка
             audioRef.current.load();
