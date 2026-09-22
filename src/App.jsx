@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { PrivateRoute } from './components/PrivateRoute';
 import CookieBanner from './components/CookieBanner';
@@ -10,7 +10,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 
 function App() {
     return (
-        <BrowserRouter basename={import.meta.env.BASE_URL}>
+        <HashRouter>
             <AuthProvider>
                 <Routes>
                     <Route path="/login" element={<Login />} />
@@ -27,7 +27,7 @@ function App() {
 
                 <CookieBanner />
             </AuthProvider>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 

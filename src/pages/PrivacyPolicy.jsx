@@ -41,7 +41,7 @@ const PrivacyPolicy = () => {
                     ко всей информации, которую Оператор может получить о
                     посетителях веб-сайта{' '}
                     <a
-                        href="https://VitaliyArmss.github.io/messenger/"
+                        href="https://VitaliyArmss.github.io/messenger/#/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -72,7 +72,7 @@ const PrivacyPolicy = () => {
                     данных, обеспечивающих их доступность в сети интернет по
                     сетевому адресу{' '}
                     <a
-                        href="https://VitaliyArmss.github.io/messenger/"
+                        href="https://VitaliyArmss.github.io/messenger/#/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -121,7 +121,7 @@ const PrivacyPolicy = () => {
                     относящаяся прямо или косвенно к определенному или
                     определяемому Пользователю веб-сайта{' '}
                     <a
-                        href="https://VitaliyArmss.github.io/messenger/"
+                        href="https://VitaliyArmss.github.io/messenger/#/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -144,7 +144,7 @@ const PrivacyPolicy = () => {
                     <strong>2.10.</strong> Пользователь — любой посетитель
                     веб-сайта{' '}
                     <a
-                        href="https://VitaliyArmss.github.io/messenger/"
+                        href="https://VitaliyArmss.github.io/messenger/#/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -678,7 +678,7 @@ const PrivacyPolicy = () => {
                     <strong>12.3.</strong> Актуальная версия Политики в свободном
                     доступе расположена в сети Интернет по адресу{' '}
                     <a
-                        href="https://VitaliyArmss.github.io/messenger/privacy"
+                        href="https://VitaliyArmss.github.io/messenger/#/privacy"
                         target="_blank"
                         rel="noopener noreferrer"
                     >

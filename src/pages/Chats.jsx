@@ -1,6 +1,6 @@
 // pages/Chats.jsx
 import { useEffect, useState, useRef } from 'react';
-import { Outlet, useNavigate, useLocation } from 'react-router-dom';
+import { Outlet, useNavigate, useLocation, Link } from 'react-router-dom';
 
 import { chatsApi } from '../api/chats';
 import { startNotificationConnection, getNotificationConnection } from '../api/signalr';
@@ -487,9 +487,9 @@ const Chats = () => {
 
                 )}
                 <footer className="chats-footer">
-                    <a href="/privacy">
+                    <Link to="/privacy">
                         Политика конфиденциальности
-                    </a>
+                    </Link>
                 </footer>
             </div>
 
