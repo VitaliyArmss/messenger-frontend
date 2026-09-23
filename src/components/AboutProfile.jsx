@@ -41,9 +41,8 @@ const AboutProfile = ({ onClose }) => {
 
     const handleUserNameChange = (e) => {
         const value = e.target.value;
-        // Только латиница, цифры и подчёркивание
-        const filteredValue = value
-            .replace(/[^a-z0-9_]/g, '');
+        // Только латиница (A-Z, a-z), цифры и подчёркивание
+        const filteredValue = value.replace(/[^a-zA-Z0-9_]/g, '');
         setUserName(filteredValue);
     };
 
