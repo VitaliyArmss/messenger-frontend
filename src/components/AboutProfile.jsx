@@ -39,6 +39,14 @@ const AboutProfile = ({ onClose }) => {
 
     if (!user) return <div className="profile-loading">Загрузка...</div>;
 
+    const handleUserNameChange = (e) => {
+        const value = e.target.value;
+        // Только латиница, цифры и подчёркивание
+        const filteredValue = value
+            .replace(/[^a-z0-9_]/g, '');
+        setUserName(filteredValue);
+    };
+
     const resetToView = () => {
         setShowView(true);
         setShowEdit(false);
@@ -192,9 +200,11 @@ const AboutProfile = ({ onClose }) => {
                         <div className="form-group">
                             <label>Username</label>
                             <input
+                                type="text"
+                                placeholder="Уникальный никнейм"
                                 value={userName}
-                                onChange={(e) => setUserName(e.target.value)}
-                                placeholder="Уникальный логин"
+                                onChange={handleUserNameChange}
+                                required
                                 maxLength={15}
                             />
                         </div>

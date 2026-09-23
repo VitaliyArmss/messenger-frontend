@@ -36,17 +36,14 @@ const Register = () => {
     };
 
     const handleNameChange = (e) => {
-        const value = e.target.value;
-        // Разрешаем только латиницу, цифры и специальные символы для email
-        const filteredValue = value.replace(/[^a-zA-Z0-9@._\-]/g, '');
-        setName(filteredValue);
+        const value = e.target.val;
+        setName(value);
     };
 
     const handleUserNameChange = (e) => {
         const value = e.target.value;
-        // Только строчная латиница, цифры и подчёркивание
+        // Только латиница, цифры и подчёркивание
         const filteredValue = value
-            .toLowerCase()
             .replace(/[^a-z0-9_]/g, '');
         setUserName(filteredValue);
     };
