@@ -36,7 +36,7 @@ const Register = () => {
     };
 
     const handleNameChange = (e) => {
-        const value = e.target.val;
+        const value = e.target.value;
         setName(value);
     };
 
